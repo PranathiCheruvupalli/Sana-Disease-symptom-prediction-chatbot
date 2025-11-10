@@ -1,0 +1,54 @@
+<!doctype html>
+<input type="text" id="city" placeholder="e.g., Hyderabad" required />
+</label>
+</div>
+<details class="microphone">
+<summary>🎙️ Voice input (optional)</summary>
+<button type="button" id="mic-btn" title="Start/stop listening">Start listening</button>
+<span id="mic-status" class="hint">Requires HTTPS and a supported browser.</span>
+</details>
+</form>
+</section>
+
+
+<section class="panel chat">
+<div id="chat-window" class="chat-window" aria-live="polite"></div>
+<div class="composer">
+<input id="message" type="text" placeholder="Describe your symptoms (comma‑separated)…" />
+<button id="send">Send</button>
+</div>
+<div class="disclaimer">
+⚠️ Sana is for education only and **does not** provide medical advice. For emergencies, contact local services.
+</div>
+</section>
+
+
+<aside class="panel results" id="results" hidden>
+<h2>Diagnosis summary</h2>
+<ul class="facts">
+<li><strong>Name:</strong> <span id="out-name">—</span></li>
+<li><strong>Age:</strong> <span id="out-age">—</span></li>
+<li><strong>Predicted disease:</strong> <span id="out-disease">—</span></li>
+<li><strong>Severity:</strong> <span id="out-severity">—</span></li>
+</ul>
+<h3>Description</h3>
+<p id="out-desc">—</p>
+
+
+<h3>Precautions</h3>
+<ul id="out-precautions"></ul>
+
+
+<div class="cta" id="cta"></div>
+</aside>
+</main>
+
+
+<footer class="footer">
+<small>© 2025 Sana. Educational demo. Built with vanilla HTML/CSS/JS.</small>
+</footer>
+
+
+<script src="app.js"></script>
+</body>
+</html>
